@@ -1,6 +1,6 @@
-input_str = input()
+input_str = input('Input number: ')
 reversed_string = input_str[::-1]
 if input_str == reversed_string:
-    print('is palindrome')
+    print('is a palindrome')
 else:
-    print('is not palindrome')
+    print('is not a palindrome')
