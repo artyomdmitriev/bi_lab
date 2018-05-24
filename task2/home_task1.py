@@ -35,4 +35,5 @@ if __name__ == '__main__':
     assert checkio('QWERTYqwerty') is False, "4th example"
     assert checkio('123456123456') is False, "5th example"
     assert checkio('QwErTy911poqqqq') is True, "6th example"
-    print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
+    print("Coding complete? Click 'Check' to review your "
+          "tests and earn cool rewards!")
