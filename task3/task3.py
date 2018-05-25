@@ -1,11 +1,11 @@
-def generate_numbers(num: int = 20) -> dict:
+def generate_numbers(num=20):
     dictionary = {}
     for i in range(1, num + 1):
         dictionary[i] = i ** i
     return dictionary
 
 
-def count_characters(count_me_string: str) -> dict:
+def count_characters(count_me_string='abcdab'):
     dic = {}
     for char in count_me_string:
         dic[char] = dic.get(char, 0) + 1

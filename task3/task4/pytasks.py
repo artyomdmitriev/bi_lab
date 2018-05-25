@@ -1,11 +1,11 @@
-def generate_numbers(num: int = 20) -> dict:
+def generate_numbers(num=20):
     dic = {}
     for i in range(1, num + 1):
         dic[i] = i ** i
     return dic
 
 
-def count_characters(count_me_string: str = 'abcdab') -> dict:
+def count_characters(count_me_string='abcdab'):
     dic = {}
     for char in count_me_string:
         dic[char] = dic.get(char, 0) + 1
@@ -41,7 +41,7 @@ def is_happy(n):
         n = r
 
 
-def happy_numbers(num: int = 200) -> list:
+def happy_numbers(num=200):
     result = []
     for i in range(1, num + 1):
         if is_happy(i):
@@ -49,7 +49,7 @@ def happy_numbers(num: int = 200) -> list:
     return result
 
 
-def is_palindrome(num: int = 1221) -> bool:
+def is_palindrome(num=1221):
     input_str = str(num)
     reversed_string = input_str[::-1]
     return True if input_str == reversed_string else False
