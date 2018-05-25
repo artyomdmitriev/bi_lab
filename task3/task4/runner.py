@@ -1,4 +1,4 @@
-import task4.pytasks as pt
+import pytasks as pt
 
 
 def runner(*args):
