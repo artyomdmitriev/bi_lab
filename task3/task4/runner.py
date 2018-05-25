@@ -1,4 +1,5 @@
 import pytasks as pt
+import sys
 
 
 def runner(*args):
@@ -13,4 +14,6 @@ def runner(*args):
             print(func_name, getattr(pt, func_name)())
 
 
-runner()
+if __name__ == '__main__':
+    args = sys.argv[1:]
+    runner(*args)
