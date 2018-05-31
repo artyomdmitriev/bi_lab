@@ -1,4 +1,4 @@
-class DealerShop:
+class DealerShop(object):
     amount_of_visitors = 0
 
     def __init__(self, name, employees, cars):

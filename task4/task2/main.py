@@ -1,6 +1,6 @@
 from car import Car
-from employee import Employee
 from dealer_shop import DealerShop
+from employee import Employee
 
 cars = list()
 cars.append(Car("Suzuki", 4500))
