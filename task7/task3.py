@@ -34,7 +34,4 @@ print_list_element([1, 2, 3], 5)
 
 # test dict
 dictionary = {'a': [1, 2, 3]}
-print('Dictionary before modification: ' + str(dictionary))
 add_to_list_in_dict(dictionary, 'c', 4)
-print('Dictionary after modification: ' + str(dictionary))
-
