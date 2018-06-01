@@ -5,6 +5,7 @@ import unittest
 class TestPytasks(unittest.TestCase):
     def test_is_palindrome(self):
         self.assertTrue(pytasks.is_palindrome(1221))
+        self.assertTrue(pytasks.is_palindrome())
 
     def test_count_characters(self):
         correct_dict = {'a': 2, 'b': 2, 'c': 1, 'd': 1}
