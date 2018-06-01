@@ -18,7 +18,8 @@ folder_path = download_url[download_url.find('/'):download_url.rfind('/'):]
 full_file_name = download_url[download_url.rfind('/') + 1::]
 file_name = full_file_name[:full_file_name.rfind('.'):]
 
-# the FTP has a long timeout so the ends with
+# the FTP takes a lot of time to respond
+# so sometimes the script ends with TimeoutError
 if not os.path.isfile(full_file_name):
     with FTP(website_address, timeout=600) as ftp:
         ftp.login()

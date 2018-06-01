@@ -42,7 +42,6 @@ args = parser.parse_args()
 download_url = args.download
 file_format = args.format
 
-
 content = urllib.request.urlopen(download_url)
 data = json.loads(content.read())
 if file_format == 'yml':
