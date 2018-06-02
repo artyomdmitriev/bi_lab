@@ -28,11 +28,9 @@ if not os.path.isfile(full_file_name):
                        .format(full_file_name=full_file_name),
                        open(full_file_name, 'wb').write)
 
-        input_file = gzip.GzipFile(full_file_name, 'rb')
+    with gzip.GzipFile(full_file_name, 'rb') as input_file:
         s = input_file.read()
-        input_file.close()
 
-        output_file = open("{file_name}.txt"
-                           .format(file_name=file_name), 'wb')
+    with open("{file_name}.txt".format(file_name=file_name), 'wb') \
+            as output_file:
         output_file.write(s)
-        output_file.close()
