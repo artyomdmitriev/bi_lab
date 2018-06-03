@@ -1,14 +1,14 @@
 def division_by_zero():
     try:
-        print(5/0)
+        print(5 / 0)
     except ZeroDivisionError as zde:
         for err in zde.args:
             print(err)
 
 
-def print_list_element(list, index):
+def print_list_element(thelist, index):
     try:
-        print(list[index])
+        print(thelist[index])
     except IndexError as ie:
         for err in ie.args:
             print(err)
